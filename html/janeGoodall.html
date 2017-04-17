@@ -57,18 +57,27 @@
 
     <div class="container">
 
-    <section class="portait-images"><h1>Hello, world!</h1>
+    <section class="portait-images">
 
     <div class="dotstyle dotstyle-fillup">
         <ul>
-          <li class="current"><a href="#childhood">Childhood/a></li>
+          <li class="current"><a href="#childhood">Childhood</a></li>
                         <li><a href="#firstTime">First time in Africa</a></li>
-                        <li><a href="#">Products</a></li>
+                        <li><a href="#research">Research</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
         </ul>
     </div>
+
+    <ul>
+          <li class="current"><a href="#childhood" id="child">Childhood</a></li>
+                        <li><a href="#firstTime" id="first">First time in Africa</a></li>
+                        <li><a href="#research" id="res">Research</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+        </ul>
 
     </section>
 
@@ -108,8 +117,7 @@
           
       </section>
 
-
-        <div class="bio">
+        <div class="bio" id="research">
             Jane's biggest contribution to science was her obersevation disproving 2 long-standing beliefs:
                 <ul>
                 <li> 1) that only humans could construct and use tools</li>
@@ -178,7 +186,8 @@
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
-    }); 
+    });
+
 
     [].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
                 new DotNav( nav, {
@@ -186,21 +195,8 @@
 
                     }
                 } );
+               
             } );
-
-    $('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-});
-
-    $('html, body').animate({
-    scrollTop: $("#target-element").offset().top
-}, 1000);
 
     </script>
 
