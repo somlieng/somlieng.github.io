@@ -44,6 +44,12 @@ html, body{
         text-align: center;
     }
 
+/* Biography Text */
+
+    .biography{
+        height:100%;
+    }
+
 /* Side Menu */
 
 #sidebar-wrapper {
