@@ -1,3 +1,7 @@
+.navdots{
+	display: inline-flex;
+}
+
 
 .dotstyle ul {
 	position: relative;

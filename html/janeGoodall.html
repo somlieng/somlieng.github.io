@@ -59,51 +59,54 @@
 
     <section class="portait-images">
 
-    <div class="dotstyle dotstyle-fillup">
-        <ul>
-          <li class="current"><a href="#childhood">Childhood</a></li>
-                        <li><a href="#firstTime">First time in Africa</a></li>
-                        <li><a href="#research">Research</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
+        <!-- Dot navigation for biography section -->
+
+   <!--  <div class="dotstyle dotstyle-fillup">
 
     <ul>
-          <li class="current"><a href="#childhood" id="child">Childhood</a></li>
-                        <li><a href="#firstTime" id="first">First time in Africa</a></li>
-                        <li><a href="#research" id="res">Research</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+          <li class="current" id="childButton"><a href="#childhood" >Childhood</a></li>
+            <li><a href="#firstTime" id="first">First time in Africa</a></li>
+            <li><a href="#research" id="res">Research</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
+   </div> -->
+
 
     </section>
 
-    
+        <!-- End of dot navigation -->
 
     <!-- Biography and comics are below -->
 
     <section class="biography-comic ">
 
+    <div id="fullpage">
+
       <p>
 
       <section class="biography">
           
-        <div class="bio" id="childhood">
+        <div>
+            
+            <div class="bio" >
             Jane Goodall is a world expert on chimpanzees. She is a british primatologist, ethologist, anthropologist, UN messenger of Peace, and a member of the board of nonhuman rights project since its founding in 1996. Social and Family interaction study of chimpanzees (55 year long study) in Gombe Stream Park, Tanzania
         </div>
 
         <div class="bio">
             Her fondness for animals was clear very eary on in her life. She once hid in a henhouse watching hens lays eggs for so long that her family reported her missing to the police. She also writes in her book, Reason for Hope, "My father gave me a lifelike chimpanzee doll. My mother;s friends were horrided by this toy, thinking it would frighten me and give me nightmare. My doll, Jubilee, still sits on my chair in London"
         </div>
+       
+        </div>
 
       </section>
 
       <section class="biography">
 
-      <div class="bio" id="firstTime">
+        <div>
+            
+            <div class="bio" id="firstTime">
             Jane couldn’t afford to go to college. So she worked. When she was 22, she got invited by her friend Clo to come stay on her family’s new farm in Kenya. Jane had always wanted to go to the continent of Africa after reading the story “Dr. Dolittle” by Hugh Lofting, which is a story about a doctor who could speak to animals and traveled to the continent of Africa and goes on numerous adventures. Jane was ecstatic and saved up all her money for the round trip passage to Kenya. 
         </div> 
 
@@ -114,8 +117,12 @@
         <div class="bio">
             At that time, Leakey was looking for someone to go to Tanzania to study chimpanzees. They were a mystery at the time. Studying them would be fascinating and might provide clues about evolution. Louis offers this chance to Jane and she agrees. Jane goes to Tanzania in 1960 with her mother. British authorities resisted the idea of a young woman living among wild animals in Africa alone.
         </div> 
+
+        </div>
           
       </section>
+
+      <section class="biography">
 
         <div class="bio" id="research">
             Jane's biggest contribution to science was her obersevation disproving 2 long-standing beliefs:
@@ -125,8 +132,13 @@
                 </ul>
             Dr. Goodall's discovery in 1960 that chimpanzees make and use tools is considered one of the greatest achievements of the twentieth-century. Until that moment, scientists had thought only humans made tools. In fact, that’s one way scientists defined homo sapiens -- as "man, the toolmaker." By her discovery, the scientific world had to define what it meant to be human. 
         </div>
+        </section>
 
-        <div class="bio">
+        <section class="biography">
+
+        <div>
+            
+            <div class="bio">
         As she wasn't dictated by traditional scientific training, she conducted her research using unorthodox methods. Her most known was that she named her apes rather than numbering them. These included:
 
         <ul>
@@ -143,15 +155,26 @@
         Her close bond to the apes led her to become the only human ever accepted into chimpanzee society
         </div>
 
+        </div>
+        
+        </section>
+
+       <section class="biography">
         <div class="bio">
             Jane discovered that a chimp's life wasn't always peaceful. Sucession of alphas caused much drama. Some females kill other chimp's babies. There was even a four-year "war" during 1974. But these violent moments were accompanied by touching moments. Chimpanzees offer each other hugs, kisses, tickles, and pats on the back. 
         </div>
+        </section>
 
+        <section class="biography">
         <div class="bio">
             Jane Goodall's work transformed the way we understand the relationship of humans and animals. She is the first member of the "Trimates", the founding mothers of Primatology, who include Dian Fossey and Birtue Galdikas. Her pioneering work in Tanzania broke gender norms and led the way for many other female scientist to be able to work in exotic locations. She revolutionary work showed that, provided the opportunity, anyone can make vanguard discoveries. 
         </div>
+        </section>
 
-        <div class="sources">
+
+        <section class="biography">
+            
+            <div class="sources">
 
          Sources:
 
@@ -163,8 +186,11 @@
             </ul>
         </div>
 
+        </section>
+
 
       </p>
+      </div>
 
     </section>
 
@@ -173,30 +199,18 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.com/libraries/fullPage.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="../js/template.js"></script>
 
     <!-- JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
 
-
-    [].slice.call( document.querySelectorAll( '.dotstyle > ul' ) ).forEach( function( nav ) {
-                new DotNav( nav, {
-                    callback : function( idx ) {
-
-                    }
-                } );
-               
-            } );
+    $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
 
     </script>
 
