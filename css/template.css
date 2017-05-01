@@ -49,6 +49,7 @@ html, body{
 
     .biography-comic h1{
         padding-bottom: 20px;
+        font-family: 'Cardo', serif;
     }
 
     .bio{
@@ -57,8 +58,26 @@ html, body{
         align-items: center;
     }
 
-    .bio.p{
+    .bio p{
         font-size: 24px;
+    }
+
+    .bio li {
+        font-size: 18px;
+    }
+
+    #longlist {
+        font-size: 12px;
+        padding-bottom: 20px;
+        font-style: italic;
+    }
+
+    p, li {
+        font-family: 'Droid Sans', sans-serif;
+    }
+
+    .sources li {
+        padding:10px;
     }
 
 /* Biography Text */
