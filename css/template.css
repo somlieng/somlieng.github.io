@@ -47,6 +47,10 @@ html, body{
 
     }
 
+    .biography-comic h1{
+        padding-bottom: 20px;
+    }
+
     .bio{
         padding-bottom: 20px;
          text-align: center;

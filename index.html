@@ -1,182 +1,212 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
 
-<head>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Making the best of your naptimes</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <title>Not Some Lady</title>
+        <link rel="stylesheet" type="text/css" href="css/homestyle.css">
+        
+        <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=BenchNine:300' rel='stylesheet' type='text/css'>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/index.css" rel="stylesheet">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <body>
 
-</head>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#top">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                </a>
+         </div>
 
-<body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="html/person-template.html" onclick=$("#menu-close").click();>Template</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#naptimes">Naptimes</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#info">Information</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+             <!-- navbar-collapse -->
+        </div>
+        <!-- container -->
     </nav>
 
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Not Some Lady</h1>
-            <br>
-            <a href="html/janeGoodall.html" class="btn btn-dark btn-lg">Jane Goodall</a>
+     <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        
+                        <h1>Welcome to Naptimes</h1>
+                        <p> What is Naptimes? Naptimes is the naptime calculator for busy college students to best utilize their free times. The program takes in your schedule and, from the free times, calculates the best times for you to take a nap according to the Cicardian rhythm to ensure minimal grogginess. Have a go, and happy napping!</p>
+                        
+                        <!-- button -->
+
+                        <a href="#schedule" id="down" class="btn btn-circle page-scroll">
+                           <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
-                </div>
+    <div id="schedule"><p></p></div>
+    <section>
+
+        <div  class="container">
+            <h3>Enter your schedule and let us help you find the perfect nap time</h3>
+
+            <div class="row inout">
+              
+              <div id="input" class="col-md-6">
+                      
+                <div id="content">
+            <div id="in-form">
+                <p>When did you fall asleep last night? (Optional)</p>
+                <input id="sleep-start" type="text" placeholder="hh:mm" size="8"> 
+                <select id="sleep-start-select">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                
+                <p>When did you wake up today? (Optional)</p>
+                <input id="sleep-end" type="text" placeholder="hh:mm" size="8"> 
+                <select id="sleep-end-select">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                
+                <p>When are you busy today?</p>
+                
+                Start:
+                <input id="start-time" type="text" placeholder="hh:mm" size="8"> 
+                <select id="start-select">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                to
+                <input id="end-time" type="text" placeholder="hh:mm" size="8">
+                <select id="end-select">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+                <button id="add-time" class="small-button">Add Time</button>
+                <button id="submit" class="small-button">Submit Info</button>
             </div>
-            <!-- /.row -->
+            
+            <div id="busy-list">
+            
+            </div>
+        </div>  
+                
+                </div>
+             
+            <div class="col-md-6">Display Results here</div>
+            </div>
+
         </div>
-        <!-- /.container -->
+
     </section>
 
-  
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
-                    </h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
+    <div id="info"><p></p></div>
+    <section id="why">
+
+        <div  class="container">
+            <h3>Why should you take naps?</h3>
+
+            <h4>How would you like to wake up?</h4>
+
+            <h5>With an energy boost</h5>
+            <p>Sleep: 10 to 20 minutes</p>
+            <p>This power naps is ideal for boosting alertness and energy. This length of sleep will limit your cycle to only the lighter stages of non-rapid eye movement (NREM) sleeping, making it easier for you to wake up.</p>
+
+            <h5>With a sleep hangover</h5>
+            <p>Sleep: 30 minutes</p>
+            <p>Some studies have shown that 30 naps lead to "sleep hangovers", a hangover-like groggy feeling that lasts for up ot 30 minutes after waking up</p>
+
+            <h5>With improved memory for names and faces</h5>
+            <p>Sleep: 60 minutes</p>
+            <p>This length of sleep includes slow-wave sleep, the deepest stages of sleep. However, you will need to anticipate some grogginess from the sleep hangover</p>
+
+            <h5>With improved emotional memory and creativity</h5>
+            <p>Sleep: 90 minutes</p>
+            <p>90 minutes is a full cycle of sleep that goes through the lighter and deeper stages of sleep and includes REM sleep. A nap this long will usually side step the sleep hangover</p>
+
+            <a id="source" href="http://www.wsj.com/articles/SB10001424127887323932604579050990895301888">click here to read more</a>
+            <a id="source" href="https://sleepfoundation.org/sleep-topics/napping">and here</a>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
+    </section>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <div id="about"><p></p></div>
+    <section id="people">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <div class="container">
+            <h3>hello from the makers</h3>
 
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    
-    </script>
+            <ul class="img-list">
+              <li>
+                <div class="profile-blurb" id="santiago">
+                    <img src="images/san.jpg" class="profile img-responsive img-circle" alt="santiago">
+                    <span class="text-content"><span>Santiago Loane</span></span>
+                </div>
+              </li>
+              
+              <li>
+                <div  class="profile-blurb" id="naropa">
+                    <img src="images/naropa.jpg" class="profile img-responsive img-circle" alt="naropa">
+                    <span class="text-content"><span>Naropa Perez</span></span>
+                </div>
+              </li>
+             
+              <li>
+               <div class="profile-blurb" id="brenden">
+                    <img src="images/brenden.jpg" class="profile img-responsive img-circle" alt="brenden">
+                    <span class="text-content"><span>Brenden Sullivan</span></span>
+                </div>
+              </li>
+              
+              <li>
+                <div class="profile-blurb" id="som">
+                    <img src="images/som.jpg" class="profile img-responsive img-circle" alt="som">
+                    <span class="text-content"><span>Som Liengtiraphan</span></span>
+                </div>
+              </li>
+            </ul>
 
-</body>
+        </div>
+    </section>
+
+     <!-- Plugin JavaScript -->
+    <script src="js/easing.js"></script>
+
+     <!-- Plugin JavaScript -->
+    <script src="js/site.js"></script>
+
+    </body>
+
 
 </html>
