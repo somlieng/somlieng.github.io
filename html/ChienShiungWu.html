@@ -1,28 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <title>FEMALE BADASSES</title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="fullpage js creator" content="Alvaro Trigo Lopez" />
+    <meta name="author" content="Som Liengtiraphan">
+    <meta name="description" content="fullPage full-screen navigation and sections control menu." />
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+    <meta name="Resource-type" content="Document" />
+
+    <title>Chien-Shiung Wu</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="../css/template.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
+    
 
     <!-- Custom Fonts -->
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  </head>
 
-  <body>
+   <link href="https://fonts.googleapis.com/css?family=Cardo:700|Droid+Sans" rel="stylesheet">
 
-     <!-- Navigation -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <style>
+
+    /* Style for our header texts
+    * --------------------------------------- */
+    h1{
+        font-size: 5em;
+        font-family: arial,helvetica;
+        color: #fff;
+        margin:0;
+    }
+    .intro p{
+        color: #fff;
+    }
+
+    /* Centered texts in each section
+    * --------------------------------------- */
+    .section{
+        text-align:center;
+    }
+
+    /* Overwriting styles for control arrows for slides
+    * --------------------------------------- */
+    .controlArrow.prev {
+        left: 50px;
+    }
+    .controlArrow.next{
+        right: 50px;
+    }
+
+
+    /* Bottom menu
+    * --------------------------------------- */
+    #infoMenu li a {
+        color: #fff;
+    }
+    </style>
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="../js/scrolloverflow.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="../js/examples.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['introduction','childhood', 'professorShip','lifeatManPro', 'scientificCon', 'legacy','sources'],
+                sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#7E8F7C','#C63D0F','#1BBC9B','#C63D0F'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Introduction','Childhood', 'Professorship', 'Life at the Manhattan Project','Scientific Contribution','legacy','sources']
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -48,39 +118,193 @@
         </ul>
     </nav>
 
-    <div class="container">
 
-    <section class="portait-images"><h1>Hello, world!</h1></section>
+<div id="fullpage">
+    
+    <div class="section " id="section0">
 
-    <section class="biography-comic"><h2>Put comics here</h2>
+        <div class="intro page">
 
-      <h4 class="biography">
+            <section class="portait-images">
 
-        Vexillologist vape cliche, pickled selfies farm-to-table sustainable austin succulents. Authentic tilde bushwick portland art party. Gentrify PBRB 8-bit tbh. Franzen fam prism lyft, venmo slow-carb af activated charcoal vice celiac VHS deep v. Salvia kickstarter raw denim, chambray snackwave neutra tattooed cornhole leggings roof party skateboard try-hard four dollar toast. Put a bird on it hammock letterpress tofu typewriter irony actually. Forage godard prism, schlitz umami letterpress irony sriracha cornhole VHS leggings vaporware actually.
+            <div class="images">
+                <p>Digital Portrait here</p>
+            </div>
 
-        Tumblr marfa banh mi kogi hot chicken austin authentic meh. Pinterest tote bag selvage copper mug kickstarter. Enamel pin tattooed wayfarers, truffaut fixie ramps selvage hella. Deep v meh fanny pack mlkshk cold-pressed umami blog succulents. Cold-pressed cardigan trust fund plaid skateboard mixtape. Kombucha tacos helvetica, poutine lomo slow-carb roof party ennui whatever taxidermy yuccie migas pabst leggings. Tumblr offal everyday carry, DIY truffaut marfa locavore selvage mustache kickstarter jean shorts keytar.
+            </section>
 
+             <section class="biography-comic">
 
-        Slow-carb put a bird on it chambray, drinking vinegar leggings tumeric af. Paleo godard trust fund, mumblecore mixtape thundercats schlitz four loko. Chambray lumbersexual woke, cold-pressed portland direct trade narwhal street art franzen copper mug pok pok food truck lo-fi vice affogato. Hammock intelligentsia vegan tote bag, raw denim distillery kitsch 3 wolf moon blog hella twee mlkshk ethical put a bird on it mumblecore. Pickled live-edge schlitz, viral tousled small batch truffaut mlkshk ethical hammock vice sustainable stumptown tbh. Tofu ugh 8-bit dreamcatcher, bespoke umami succulents flannel kale chips sartorial art party whatever bushwick craft beer. Keytar tumblr succulents mixtape, aesthetic schlitz pinterest semiotics drinking vinegar typewriter edison bulb.
+             <div class = "biography">
+                      
+                    <div>
+                        
+                        <div class="bio" >
+                        <h1>Chien-Shiung Wu</h1>
+                        <p>is the “First Lady of Physics”.  She is an experimental physicist that won the Medal of Science, disproved the “Law of conservation of parity”, and helped fuel the atomic bomb.</p>
+                    </div>
 
-        +1 man bun stumptown shabby chic tumblr. Lo-fi twee gochujang freegan. 8-bit pickled fanny pack vape, woke copper mug tumeric forage XOXO synth green juice flannel pop-up. Humblebrag franzen man braid you probably haven't heard of them, ramps dreamcatcher unicorn pitchfork schlitz art party kickstarter fashion axe direct trade cray. Sartorial mixtape bushwick vegan flannel sustainable. Ennui franzen PBRB synth tbh quinoa put a bird on it, messenger bag listicle vape plaid cronut jianbing snackwave venmo. Meditation poutine readymade, distillery pitchfork dreamcatcher hashtag kickstarter echo park artisan letterpress asymmetrical PBRB.
+                 </div>
 
-        Banjo cronut bitters, tote bag helvetica sriracha brooklyn venmo tumeric 8-bit. Succulents post-ironic umami, man braid brunch trust fund small batch butcher. Distillery whatever taxidermy yuccie vaporware polaroid. Hell of hexagon letterpress fanny pack. Kickstarter chartreuse bicycle rights you probably haven't heard of them. Shabby chic live-edge synth godard, migas wolf chartreuse. Readymade blog literally salvia.
-
-      </h4>
-
-    </section>
-
-  
+              </section>
+        </div>
+    
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
+    <div class="section " id="section1">
 
-    <!-- Custom Theme JavaScript -->
-    <script>
+        <div class="intro page">
+
+            <section class="portait-images">
+
+            <div class="images">
+                <p>Digital Portrait here</p>
+            </div>
+
+            </section>
+
+             <section class="biography-comic">
+
+             <div class = "biography">
+
+                    <div class="bio">
+                        <p>Chien-Shiung Wu was born in 1912 in Liu Ho, China. Her father was women’s rights activist and wanted his daughter to be well educated. He started the first school for girls in their town and enrolled his daughter in it. They supported her in her academic career, so matter the distance or price. In 1936, Wu travelled to the University of California, Berkeley to study experimental physics and received her PhD there.</p>
+                    </div>
+                 </div>
+
+              </section>
+        </div>
+    
+    </div>
+    
+    <div class="section" id="section2">
+        
+        <div class="intro page">
+
+            <section class="portait-images">
+
+            <div class="images">
+                <p>Digital Portrait here</p>
+            </div>
+
+            </section>
+
+             <section class="biography-comic ">
+                <div class = "biography">
+                 
+                    <div class="bio" id="professor">
+                        <p>After finishing her PhD, Wu and her husband moved to the east coast and she became a professor at Princeton University and Smith college. </p> 
+                   </div> 
+
+                    <div class="bio">
+                        <p>Wu was recruited by the Manhattan Project while she was working as a research scientist at Columbia University. Though she did not know what they project was about, during her interviewed she figure it out by looking at the equation left on the board. </p>
+                    </div> 
+
+                </div>
+                </div>
+            </section>
+    </div>
+
+    <div class="section" id="section3">
+        <div class="intro page">
+            <section class="portait-images">
+
+            <div class="images">
+                <p>Digital Portrait here</p>
+            </div>
+
+            </section>
+
+             <section class="biography-comic">
+             <div class = "biography">
+                    <h1>Life at the Manhattan Project</h1>
+                    
+                    <div class="bio" id="manhattan">
+                        <p>While there,  she developed a method to enrich uranium ore into the isotope that was required for fuel in the atomic bomb. She also had a large part in developing radiation detection.  She was the only Chinese person to have worked on the Manhattan Project. 
+                        </p>
+                    </div>
+                    
+                
+            </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="section" id="section4">
+        <div class="intro page">
+            <section class="portait-images">
+
+            <div class="images">
+                <p>Digital Portrait here</p>
+            </div>
+
+            </section>
+
+             <section class="biography-comic biography">
+             <div class = "biography">
+             <h1>Scientific Contribution</h1>
+            <div class="bio">
+                <p>
+                    After the Manhattan Project, Wu returned to Columbia to work as a research scientist.  There she worked with fellow scientists to disprove “the principle of conservation of parity” which, up until this point, had been considered a law. This law had started that particles decayed in a symmetric way. However, when she observed the K-meson, she discovered that it did not follow this law. It a careful eye and a strong magnet, Wu discovered that the particle had a preferred direction of decay. 
+                </p>
+            </div>
+            </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="section" id="section5">
+        <div class="intro page">
+            <section class="portait-images">
+
+            <div class="images">
+                <p>Digital Portrait here</p>
+            </div>
+
+            </section>
+
+             <section class="biography-comic">
+             <div class="biography">
+                     <h1>Legacy</h1>
+            <div class="bio">
+                <p>
+                    Though she was not awarded the 1957 Nobel Prize for Physics with her fellow male colleagues, she author her book, Beta Decay, which is still the standard text for nuclear physicists today. She was awarded a full professorship at Columbia. Chien-Shiung Wu  was the first woman to be elected president of  the American Physical Society and winning many awards for her accomplishments. She expander her scope of research and helped to answer mysteries about blood and sickle cell anemia.  She continued to research and teach around the world until she died in 1997. 
+                </p>
+            </div>
+             </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="section" id="section">
+        <div class="intro page">
+
+             <section class="biography-comic biography">
+              <div class="biography">
+            <h1>Sources:</h1>
+                <div class="bio">
+                    
+
+
+                            <ul>
+                            <li><p>Women in Science: 50 Fearless Pioneers Who Changed the World by Rachel Ignotofsky - Page 66-67</p></li>
+                            <li><p><a href="https://www.nwhm.org/education-resources/biography/biographies/chien-shiung-wu/">National Women's History Museum - Chien-Shiung Wu</a></p></li>
+                            <li><p><a href="http://atdpweb.soe.berkeley.edu/quest/herstory/C-S_Wu.html">Chieng-Shiung Wu - University of California, Berkley</a></p></li>
+                            <li><p><a href="http://www.physics.ucla.edu/~cwp/Phase2/Wu,_Chien_Shiung@841234567.html">Chieng-Shiung Wu - University of California Los Angeles</a></p></li>
+                            <li><p><a href="http://www.atomicheritage.org/profile/chien-shiung-wu">Chien-Shiung Wu - Atomic Heritage</a></p></li>
+                            </ul>
+            
+                    
+                </div>
+                </div>
+            </section>
+        </div>
+    </div>  
+
+</div>
+
+<script type="text/javascript">
+    
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
@@ -91,7 +315,9 @@
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
-    </script>
+    
+</script>
 
-  </body>
+
+</body>
 </html>
